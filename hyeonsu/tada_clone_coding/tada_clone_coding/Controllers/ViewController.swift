@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainContentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        mainContentLabel.numberOfLines = 0
+        mainContentLabel.text = "승차거부 없는 바로세차\n서비스 만족도 4.95점\n서비스 만족도 90%"
     }
 
-
+    @IBAction func nextPage(_ sender: UIButton) {
+        if let registVC = UIStoryboard(name: "RegisterViewController", bundle: nil).instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterViewController {
+            navigationController?.pushViewController(registVC, animated: true)
+        }
+    }
+    
+    
+    
 }
 

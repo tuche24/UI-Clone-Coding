@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="tada_clone_coding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요! 휴대폰 번호를 입력해 주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSI-lC-4eq">
+                                <rect key="frame" x="20" y="89" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkX-8a-TTy">
+                                <rect key="frame" x="0.0" y="763" width="393" height="55"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="iWb-sm-5zz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다음">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-CS-DVc">
+                                <rect key="frame" x="151" y="714" width="222" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="가입 후 번호를 바꾸셨나요? &gt;">
+                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ri-TT-T4u">
+                                <rect key="frame" x="208" y="669" width="165" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="해외 번호 입력하기 &gt;">
+                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXV-Eu-1L2">
+                                <rect key="frame" x="323.33333333333331" y="132.33333333333334" width="49.666666666666686" height="49.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QXV-Eu-1L2" secondAttribute="height" multiplier="1:1" id="G3p-RV-PQt"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <buttonConfiguration key="configuration" style="plain" image="x.circle.fill" catalog="system"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZM-Do-Pjk">
+                                <rect key="frame" x="30" y="140" width="283.33333333333331" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oha-tM-Wsr">
+                                <rect key="frame" x="20" y="184" width="353" height="1.6666666666666572"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="uGT-3d-dia"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QXV-Eu-1L2" firstAttribute="leading" secondItem="XZM-Do-Pjk" secondAttribute="trailing" constant="10" id="0q0-WT-jvM"/>
+                            <constraint firstItem="QXV-Eu-1L2" firstAttribute="centerY" secondItem="XZM-Do-Pjk" secondAttribute="centerY" id="3dX-Wd-GiK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Oha-tM-Wsr" secondAttribute="trailing" constant="20" id="3jC-fE-bDa"/>
+                            <constraint firstItem="Oha-tM-Wsr" firstAttribute="top" secondItem="XZM-Do-Pjk" secondAttribute="bottom" constant="10" id="8eg-SR-0q7"/>
+                            <constraint firstItem="XZM-Do-Pjk" firstAttribute="top" secondItem="wSI-lC-4eq" secondAttribute="bottom" constant="30" id="AeO-bj-lgX"/>
+                            <constraint firstItem="wSI-lC-4eq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="DuJ-oa-hAl"/>
+                            <constraint firstAttribute="trailing" secondItem="7ri-TT-T4u" secondAttribute="trailing" constant="20" id="FaD-e7-Adg"/>
+                            <constraint firstItem="Oha-tM-Wsr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="IFW-xP-bbK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nkX-8a-TTy" secondAttribute="bottom" id="LtM-Bz-JdB"/>
+                            <constraint firstItem="vjb-CS-DVc" firstAttribute="top" secondItem="7ri-TT-T4u" secondAttribute="bottom" constant="10" id="PsE-vf-bmn"/>
+                            <constraint firstItem="nkX-8a-TTy" firstAttribute="top" secondItem="vjb-CS-DVc" secondAttribute="bottom" constant="14" id="T3K-aF-Gmb"/>
+                            <constraint firstAttribute="trailing" secondItem="vjb-CS-DVc" secondAttribute="trailing" constant="20" id="U07-WC-MpR"/>
+                            <constraint firstItem="wSI-lC-4eq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="dJh-4a-iz3"/>
+                            <constraint firstItem="nkX-8a-TTy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dSJ-s1-lep"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QXV-Eu-1L2" secondAttribute="trailing" constant="20" id="lUA-RF-u2i"/>
+                            <constraint firstItem="XZM-Do-Pjk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="okP-4r-NaT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nkX-8a-TTy" secondAttribute="trailing" id="xlB-h6-JYX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wSI-lC-4eq" secondAttribute="trailing" constant="20" id="zu5-vG-dKT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alienBtn" destination="7ri-TT-T4u" id="LN3-Dm-yob"/>
+                        <outlet property="changedNumberBtn" destination="vjb-CS-DVc" id="OP4-yK-mef"/>
+                        <outlet property="nextBtn" destination="nkX-8a-TTy" id="DiK-lm-y7V"/>
+                        <outlet property="phoneTf" destination="XZM-Do-Pjk" id="Fcd-HT-pcS"/>
+                        <outlet property="titleLabel" destination="wSI-lC-4eq" id="NmT-dI-Hm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

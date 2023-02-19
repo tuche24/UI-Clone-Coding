@@ -16,6 +16,8 @@
 		5AB64D9629A1D265000C9349 /* tada_clone_codingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64D9529A1D265000C9349 /* tada_clone_codingTests.swift */; };
 		5AB64DA029A1D265000C9349 /* tada_clone_codingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64D9F29A1D265000C9349 /* tada_clone_codingUITests.swift */; };
 		5AB64DA229A1D265000C9349 /* tada_clone_codingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64DA129A1D265000C9349 /* tada_clone_codingUITestsLaunchTests.swift */; };
+		5AB64DB529A1D50E000C9349 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64DB429A1D50E000C9349 /* RegisterViewController.swift */; };
+		5AB64DB729A1D528000C9349 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB64DB629A1D528000C9349 /* RegisterViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5AB64D9B29A1D265000C9349 /* tada_clone_codingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tada_clone_codingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB64D9F29A1D265000C9349 /* tada_clone_codingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tada_clone_codingUITests.swift; sourceTree = "<group>"; };
 		5AB64DA129A1D265000C9349 /* tada_clone_codingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tada_clone_codingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5AB64DB429A1D50E000C9349 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5AB64DB629A1D528000C9349 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			children = (
 				5AB64D8429A1D264000C9349 /* Main.storyboard */,
 				5AB64D8929A1D265000C9349 /* LaunchScreen.storyboard */,
+				5AB64DB629A1D528000C9349 /* RegisterViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB64D8229A1D264000C9349 /* ViewController.swift */,
+				5AB64DB429A1D50E000C9349 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB64DB729A1D528000C9349 /* RegisterViewController.storyboard in Resources */,
 				5AB64D8B29A1D265000C9349 /* LaunchScreen.storyboard in Resources */,
 				5AB64D8829A1D265000C9349 /* Assets.xcassets in Resources */,
 				5AB64D8629A1D264000C9349 /* Main.storyboard in Resources */,
@@ -301,6 +308,7 @@
 				5AB64D8329A1D264000C9349 /* ViewController.swift in Sources */,
 				5AB64D7F29A1D264000C9349 /* AppDelegate.swift in Sources */,
 				5AB64D8129A1D264000C9349 /* SceneDelegate.swift in Sources */,
+				5AB64DB529A1D50E000C9349 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

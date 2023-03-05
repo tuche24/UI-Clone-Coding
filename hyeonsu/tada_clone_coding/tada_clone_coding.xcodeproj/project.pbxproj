@@ -180,6 +180,8 @@
 		5AB64DB129A1D27A000C9349 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A8838B929B45FC0006B2889 /* OTPTextField.swift */,
+				5A8838BD29B464BC006B2889 /* OTPFieldView.swift */,
 				5AB64D8429A1D264000C9349 /* Main.storyboard */,
 				5AB64D8929A1D265000C9349 /* LaunchScreen.storyboard */,
 				5AB64DB629A1D528000C9349 /* RegisterViewController.storyboard */,
@@ -195,8 +197,6 @@
 				5AB64DB429A1D50E000C9349 /* RegisterViewController.swift */,
 				5A8838B229B45BF1006B2889 /* CustomPopupViewController.swift */,
 				5A8838B729B45F1C006B2889 /* VerificationViewController.swift */,
-				5A8838B929B45FC0006B2889 /* OTPTextField.swift */,
-				5A8838BD29B464BC006B2889 /* OTPFieldView.swift */,
 				5A8838BF29B47294006B2889 /* BaseViewController.swift */,
 			);
 			path = Controllers;

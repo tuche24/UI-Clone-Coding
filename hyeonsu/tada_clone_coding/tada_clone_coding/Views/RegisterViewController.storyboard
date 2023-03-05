@@ -54,9 +54,12 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                                 <buttonConfiguration key="configuration" style="plain" image="x.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="didTapTextFieldEraseBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gfx-t8-Xp1"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZM-Do-Pjk">
-                                <rect key="frame" x="30" y="140" width="283.33333333333331" height="34"/>
+                                <rect key="frame" x="30" y="140" width="283.33333333333337" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

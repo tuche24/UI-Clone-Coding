@@ -1,6 +1,6 @@
 import UIKit
 
-class CustomPopupViewController: UIViewController {
+class CustomPopupViewController: BaseViewController {
     
     var titleLabel: UILabel!
     var okButton: UIButton!

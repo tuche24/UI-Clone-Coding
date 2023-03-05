@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var phoneTf: UITextField!
@@ -44,6 +44,9 @@ class RegisterViewController: UIViewController {
     @IBAction func didTapNextBtn(_ sender: UIButton) {
         if let phoneNumber = phoneTf.text, validatePhoneNumber(phoneNumber) {
             // 핸드폰 번호가 유효한 경우에만 처리합니다.
+            let verificationVC = UIStoryboard(name: "VerificationViewController", bundle: nil).instantiateViewController(withIdentifier: "VerificationViewController") as! VerificationViewController
+            verificationVC.phoneNumber = phoneTf.text ?? ""
+            navigationController?.pushViewController(verificationVC, animated: true)
         } else {
             let popupVC = CustomPopupViewController()
             popupVC.modalPresentationStyle = .overFullScreen

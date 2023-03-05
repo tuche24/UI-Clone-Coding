@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5A8838B329B45BF1006B2889 /* CustomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838B229B45BF1006B2889 /* CustomPopupViewController.swift */; };
 		5A8838B629B45D4D006B2889 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838B529B45D4D006B2889 /* UIColor+Extensions.swift */; };
+		5A8838B829B45F1C006B2889 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838B729B45F1C006B2889 /* VerificationViewController.swift */; };
+		5A8838BA29B45FC0006B2889 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838B929B45FC0006B2889 /* OTPTextField.swift */; };
+		5A8838BC29B45FD1006B2889 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8838BB29B45FD1006B2889 /* VerificationViewController.storyboard */; };
+		5A8838BE29B464BC006B2889 /* OTPFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838BD29B464BC006B2889 /* OTPFieldView.swift */; };
+		5A8838C029B47294006B2889 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8838BF29B47294006B2889 /* BaseViewController.swift */; };
 		5AB64D7F29A1D264000C9349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64D7E29A1D264000C9349 /* AppDelegate.swift */; };
 		5AB64D8129A1D264000C9349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64D8029A1D264000C9349 /* SceneDelegate.swift */; };
 		5AB64D8329A1D264000C9349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB64D8229A1D264000C9349 /* ViewController.swift */; };
@@ -42,6 +47,11 @@
 /* Begin PBXFileReference section */
 		5A8838B229B45BF1006B2889 /* CustomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupViewController.swift; sourceTree = "<group>"; };
 		5A8838B529B45D4D006B2889 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		5A8838B729B45F1C006B2889 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		5A8838B929B45FC0006B2889 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		5A8838BB29B45FD1006B2889 /* VerificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationViewController.storyboard; sourceTree = "<group>"; };
+		5A8838BD29B464BC006B2889 /* OTPFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldView.swift; sourceTree = "<group>"; };
+		5A8838BF29B47294006B2889 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5AB64D7B29A1D264000C9349 /* tada_clone_coding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tada_clone_coding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB64D7E29A1D264000C9349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AB64D8029A1D264000C9349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 				5AB64D8429A1D264000C9349 /* Main.storyboard */,
 				5AB64D8929A1D265000C9349 /* LaunchScreen.storyboard */,
 				5AB64DB629A1D528000C9349 /* RegisterViewController.storyboard */,
+				5A8838BB29B45FD1006B2889 /* VerificationViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +194,10 @@
 				5AB64D8229A1D264000C9349 /* ViewController.swift */,
 				5AB64DB429A1D50E000C9349 /* RegisterViewController.swift */,
 				5A8838B229B45BF1006B2889 /* CustomPopupViewController.swift */,
+				5A8838B729B45F1C006B2889 /* VerificationViewController.swift */,
+				5A8838B929B45FC0006B2889 /* OTPTextField.swift */,
+				5A8838BD29B464BC006B2889 /* OTPFieldView.swift */,
+				5A8838BF29B47294006B2889 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,6 +309,7 @@
 				5AB64DB729A1D528000C9349 /* RegisterViewController.storyboard in Resources */,
 				5AB64D8B29A1D265000C9349 /* LaunchScreen.storyboard in Resources */,
 				5AB64D8829A1D265000C9349 /* Assets.xcassets in Resources */,
+				5A8838BC29B45FD1006B2889 /* VerificationViewController.storyboard in Resources */,
 				5AB64D8629A1D264000C9349 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +340,10 @@
 				5AB64D8329A1D264000C9349 /* ViewController.swift in Sources */,
 				5AB64D7F29A1D264000C9349 /* AppDelegate.swift in Sources */,
 				5AB64D8129A1D264000C9349 /* SceneDelegate.swift in Sources */,
+				5A8838C029B47294006B2889 /* BaseViewController.swift in Sources */,
+				5A8838BE29B464BC006B2889 /* OTPFieldView.swift in Sources */,
+				5A8838BA29B45FC0006B2889 /* OTPTextField.swift in Sources */,
+				5A8838B829B45F1C006B2889 /* VerificationViewController.swift in Sources */,
 				5AB64DB529A1D50E000C9349 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

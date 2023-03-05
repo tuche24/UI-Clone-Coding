@@ -41,6 +41,22 @@ class RegisterViewController: UIViewController {
         phoneTf.text = ""
     }
     
+    @IBAction func didTapNextBtn(_ sender: UIButton) {
+        if let phoneNumber = phoneTf.text, validatePhoneNumber(phoneNumber) {
+            // 핸드폰 번호가 유효한 경우에만 처리합니다.
+        } else {
+            let popupVC = CustomPopupViewController()
+            popupVC.modalPresentationStyle = .overFullScreen
+            present(popupVC, animated: false)
+        }
+        
+    }
+    
+    func validatePhoneNumber(_ phoneNumber: String) -> Bool {
+        // "010"으로 시작하고, 총 길이가 11인 경우에만 true를 반환합니다.
+        return phoneNumber.hasPrefix("010") && phoneNumber.count == 11
+    }
+    
     func setKeyboardObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
